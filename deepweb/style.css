@@ -1,0 +1,60 @@
+@font-face{
+    font-family: 'Creeper';
+    src: url(fontes/Creepster-Regular.ttf) format('truetype');
+}
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(29, 29, 29);
+}
+header{
+    background-color: rgb(70, 70, 70);
+    width: 100vw;
+    margin: auto;
+}
+header>h1{
+    margin: 0px;
+    padding: 10px;
+    font-size: 3em;
+}
+header>nav{
+    text-align: end;
+    color: white;
+    font-size: 1.3em;
+    padding-bottom: 2px;
+    padding-right: 10px;
+}
+.fonte1{
+    font-family: 'Creeper', Arial, Helvetica, sans-serif;
+    color: red;
+    text-shadow: 2px 2px 0px black;
+}
+.fonte2{
+    font-family: 'Comic Sans MS', 'Comic Sans', cursive;
+    font-size: 1em;
+    color: red;
+}
+main{
+    color: white;
+    max-width: 50vw;
+    background-color: black;
+    margin: auto;
+    
+}
+main>h2{
+    color: rgb(180, 0, 0);
+    text-decoration: underline;
+    text-shadow: 1px 1px 0px rgb(78, 49, 49);
+    padding: 10px;
+    text-align: center;
+}
+main>h3,a{
+    color: red;
+    padding: 10px;
+}
+main>p{
+    padding: 0px 10px 5px 10px;
+}
