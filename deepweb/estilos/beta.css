@@ -1,6 +1,7 @@
+/*
 @font-face{
     font-family: 'Creeper';
-    src: url(fontes/Creepster-Regular.ttf) format('truetype');
+    src: url(../fontes/Creepster-Regular.ttf) format('truetype');
 }
 *{
     margin: 0px;
@@ -20,12 +21,18 @@ header>h1{
     padding: 10px;
     font-size: 3em;
 }
-header>nav{
-    text-align: end;
-    color: white;
+div.links{
+    background-color: white;
     font-size: 1.3em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
     padding-bottom: 2px;
     padding-right: 10px;
+}
+div.links > nav{
+    flex: auto;
 }
 .fonte1{
     font-family: 'Creeper', Arial, Helvetica, sans-serif;
@@ -37,24 +44,24 @@ header>nav{
     font-size: 1em;
     color: red;
 }
-main{
+main > article{
     color: white;
     max-width: 50vw;
-    background-color: black;
-    margin: auto;
-    
+    background-color: black;    
 }
-main>h2{
+main > article > h2{
     color: rgb(180, 0, 0);
     text-decoration: underline;
     text-shadow: 1px 1px 0px rgb(78, 49, 49);
     padding: 10px;
     text-align: center;
 }
-main>h3,a{
+main > article > h3,a{
     color: red;
     padding: 10px;
 }
+
 main>p{
     padding: 0px 10px 5px 10px;
 }
+*/
