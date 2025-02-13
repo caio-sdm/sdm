@@ -1,4 +1,5 @@
 @charset "UTF-8";
+/* mobile first */
 
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 
@@ -6,11 +7,7 @@
     font-family: 'Creeper';
     src: url(../fontes/Creepster-Regular.ttf) format('truetype');
 }
-@media (max-width: 600px){
-    .pequenos{
-        width: 85%;
-    }
-}
+
 :root{
     --cor0: #c5ebd6;
     --cor1: #83e1ad;
@@ -20,9 +17,7 @@
     --cor5: #063d1e;
 
     --fonte-padrão: Arial, Verdana, Helvetica, sans-serif;
-    --fonte-destaque: 'Creeper', cursive; 
-    --fonte-android: 'Android', cursive;
-
+    --fonte-deep-web: 'Creeper', cursive; 
 }
 *{
     margin: 0px;
@@ -31,13 +26,14 @@
 body{
     background-color: var(--cor0);
     font-family: var(--fonte-padrão);
+    position: relative;
 }
 a.externo::after{
     content: '\00A0\1F517';
 }
 header{
     background-color: var(--cor4);
-    min-height: 150px;
+    width: 100%;
     text-align: center;
     padding-top: 40px;
     background-image: linear-gradient(to bottom, var(--cor3), var(--cor5));
@@ -46,11 +42,10 @@ header{
 header > div > span.fonte1{
     color: white;
     font-weight: normal;
-    font-family: var(--fonte-destaque);
+    font-family: var(--fonte-deep-web);
     margin-bottom: 20px;
     font-size: 3em;
     text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5);
-    
 }
 header > div > span.fonte2{
     color: white;
@@ -63,19 +58,29 @@ header > p{
     color: white;
     font-family: var(--fonte-padrão);
     font-size: 1.2em;
-    max-width: 500px;
     margin: auto;
     padding-bottom: 20px;
     padding-left: 10px;
     padding-right: 10px;
     text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5);
 }
-nav{
+span#burger{
+    cursor: pointer;
+    background-color: white;
+    display: block;
+    text-align: center;
+    padding: 10px;
+}
+header > menu {
+    display: none;
+}
+header > menu > ul > li{
+    display: block;
     background-color: var(--cor5);
     padding: 10px;
     box-shadow: 0px 7px 7px rgba(0, 0, 0, 0.2);
 }
-nav > a{
+header > menu > ul > li > a{
     color: var(--cor0);
     padding: 10px;
     text-decoration: none;
@@ -83,20 +88,16 @@ nav > a{
     border-radius: 5px;
     transition-duration: 0.5s;
 }
-nav > a:hover{
-    background-color: var(--cor3);
+header > menu > ul > li > a:hover{
     color: var(--cor5);
 }
+
 main{
     background-color: white;
-    min-width: 300px;
-    max-width: 800px;
+    width: 250px;
     margin: auto;
     margin-bottom: 30px;
     padding: 20px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
 }
 main h1{
     color: var(--cor5);
@@ -117,20 +118,6 @@ main p{
     line-height: 1.5em;
     font-size: 1em;
 }
-main strong{
-    color: var(--cor4);
-    font-weight: bold;
-}
-main a{
-    font-weight: bold;
-    color: var(--cor5);
-    padding: 2px 6px;
-    text-decoration: none;
-}
-main a:hover{
-    text-decoration: underline;
-    color: var(--cor4);
-}
 main img{
     width: 100%;
     margin: auto;
@@ -142,26 +129,14 @@ main img.pequeno{
     margin: auto;
 }
 
-div.video{
-    background-color: var(--cor5);
-    margin: 0px -20px 30px -20px;
-    padding: 20px;
-    padding-bottom: 56.7%;
-    position: relative;
-}
-div.video > iframe{
-    position: absolute;
-    top: 5%;
-    left: 5%;
-    width: 90%;
-    height: 90%;
-}
-footer{
+
+footer > div{
     background-color: var(--cor5);
     color: white; 
     text-align: center;
     font-size: 0.8em;
     padding: 5px;
+    position: absolute;
 }
 footer a{
     color: white;
