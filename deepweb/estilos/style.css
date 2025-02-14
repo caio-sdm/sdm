@@ -2,6 +2,7 @@
 /* mobile first */
 
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Passion+One:wght@400;700;900&family=Sriracha&display=swap');
 
 @font-face {
     font-family: 'Creeper';
@@ -9,112 +10,117 @@
 }
 
 :root{
-    --cor0: #c5ebd6;
-    --cor1: #83e1ad;
-    --cor2: #3ddc84;
-    --cor3: #2fa866; 
-    --cor4: #1a5c37;
-    --cor5: #063d1e;
+    --cor0: #f2f2f2;
+    --cor1: #595959;
+    --cor1-1: #383838;
+    --cor2: #d90404;
+    --cor2-1: #ff1717;
+    --cor3: #8c0303; 
+    --cor4: #400101;
+    --cor5: #0d0000;
 
     --fonte-padrão: Arial, Verdana, Helvetica, sans-serif;
     --fonte-deep-web: 'Creeper', cursive; 
+    --fonte-smile: 'Open Sans', sans-serif;
 }
 *{
     margin: 0px;
     padding: 0px;
 }
 body{
-    background-color: var(--cor0);
+    background-image: linear-gradient(to top, #0f0000, black);
     font-family: var(--fonte-padrão);
     position: relative;
 }
-a.externo::after{
-    content: '\00A0\1F517';
-}
 header{
-    background-color: var(--cor4);
+    background-color: var(--cor1);
     width: 100%;
-    text-align: center;
-    padding-top: 40px;
-    background-image: linear-gradient(to bottom, var(--cor3), var(--cor5));
+    display: flex;
+    justify-content: center;
+    height: 60px;
 }
-
+header > div{
+    background-image: url(../imagens/sangue1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    width: fit-content;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+}
 header > div > span.fonte1{
-    color: white;
+    color: var(--cor2-1);
     font-weight: normal;
     font-family: var(--fonte-deep-web);
-    margin-bottom: 20px;
     font-size: 3em;
-    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5);
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 1);
 }
 header > div > span.fonte2{
-    color: white;
-    font-weight: normal;
-    margin-bottom: 20px;
-    font-size: 2.5em;
-    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5);
-}
-header > p{
-    color: white;
-    font-family: var(--fonte-padrão);
-    font-size: 1.2em;
-    margin: auto;
-    padding-bottom: 20px;
-    padding-left: 10px;
-    padding-right: 10px;
-    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5);
+    color: var(--cor2-1);
+    font-family: var(--fonte-smile);
+    font-weight: bold;
+    font-size: 2.3em;
+    margin-left: 10px;
 }
 span#burger{
     cursor: pointer;
-    background-color: white;
+    background-color: var(--cor1-1);
+    color: var(--cor0);
     display: block;
     text-align: center;
     padding: 10px;
+    box-shadow: inset 0px 2px 10px rgba(0, 0, 0, 0.5);
 }
-header > menu {
+menu {
     display: none;
 }
-header > menu > ul > li{
-    display: block;
-    background-color: var(--cor5);
+menu > ul {
+    background-color: var(--cor1-1);
+    background-position: center bottom;
     padding: 10px;
-    box-shadow: 0px 7px 7px rgba(0, 0, 0, 0.2);
+    box-shadow: inset 0px 2px 10px rgba(0, 0, 0, 0.5);
+
 }
-header > menu > ul > li > a{
+menu > ul > li{
+    display: inline-block;
+    background-color: transparent;
+    padding: 10px;
+}
+menu > ul > li > a{
     color: var(--cor0);
     padding: 10px;
     text-decoration: none;
     font-weight: bold;
-    border-radius: 5px;
-    transition-duration: 0.5s;
 }
-header > menu > ul > li > a:hover{
-    color: var(--cor5);
+menu > ul > li > a:hover{
+    text-decoration: underline;
 }
 
 main{
-    background-color: white;
+    background-color: black;
     width: 250px;
     margin: auto;
-    margin-bottom: 30px;
     padding: 20px;
 }
 main h1{
-    color: var(--cor5);
-    font-family: var(--fonte-android);
+    color: var(--cor3);
+    font-family: var(--fonte-padrão);
     font-size: 1.5em;
+    text-decoration: underline;
+    text-shadow: 0.5px 0.5px 0px #f2f2f2;
+    padding: 10px 0px;
+    margin-bottom: 5px;
 }
 main h2{
-    font-family: var(--fonte-android);
-    color: var(--cor4);
+    font-family: var(--fonte-padrão);
+    color: var(--cor2);
     font-size: 1.2em;
-    background-image: linear-gradient(to right, var(--cor1), transparent);
-    text-indent: 8px;
 }
 main p{
-    margin: 15px 0px;
-    text-align: justify;
-    text-indent: 30px;
+    color: #f2f2f2;
+    margin: 3px 0px;
+    text-align: left;
     line-height: 1.5em;
     font-size: 1em;
 }
@@ -131,7 +137,7 @@ main img.pequeno{
 
 
 footer > div{
-    background-color: var(--cor5);
+    background-color: var(--cor1);
     color: white; 
     text-align: center;
     font-size: 0.8em;
