@@ -1,0 +1,13 @@
+@charset "UTF-8";
+/*computador: 1200 - 1920
+tv/grandes telas: + 1920 */
+
+@media screen and (min-width: 1200px) and (max-width: 1920px) {
+    body{
+        background-image: url(../imagens-outras/fbi.png), url(../imagens-outras/interpol.png);
+        background-repeat: no-repeat;
+        background-size: 30%;
+        background-position: calc(0% + 20px) 50%, calc(100% - 20px) 50%;
+    }
+    
+}
