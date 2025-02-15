@@ -1,0 +1,56 @@
+@charset "UTF-8";
+/*computador: 1200 - 1920
+tv/grandes telas: + 1920 */
+
+@media screen and (min-width: 1200px) and (max-width: 1920px) {
+    
+    div#conteudo{
+        background-image: url(../imagens/sangue3.png), url(../imagens/emoji1.png), url(../imagens/sangue4.png), url(../imagens/emogi2.gif), linear-gradient(to top, #0f0000, black);
+        background-size: 15%, 15%, 15%, 15%, cover;
+        background-position: left top, top right, calc(100% - 20px) calc(100% - 20px), left bottom;
+        background-repeat: no-repeat;
+    }
+    
+    header{
+        justify-content: start;
+        background-image: url(../imagens/sangue2.png), url(../imagens/sangue2.png);
+        background-size: contain, contain;
+        background-position: calc(100% - 250px), right;
+        background-repeat: no-repeat;
+        height: 80px;
+    }
+    span#burger{
+        display: none;
+    }
+    menu{
+        display: block;
+        background-color: transparent;
+        transform: translateY(-50px);
+    }
+    menu > ul {
+        display: block;
+        background-color: transparent;
+        text-align: end;
+        box-shadow: none;
+        padding-bottom: 0px;
+    }
+    menu > ul > li{
+        display: inline-block;
+        font-size: 1.2em;
+    }
+
+    main{
+        transform: translateY(-50px);
+        width:50%;
+        height: 475px;
+    }
+    main  h1{
+        font-size: 2.5em;
+    }
+    main h2{
+        font-size: 1.5em;
+    }
+    main p {
+        font-size: 1.2em;
+    }
+}

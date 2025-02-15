@@ -9,17 +9,19 @@
     <link rel="shortcut icon" href="favicon/favdw.ico" type="image/x-icon">
 
     <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="estilos/media-query.css">
 </head>
 <body>
-    <audio autoplay loop>
-        <source src="musica/medo.mp3" type="audio/mpeg">
-    </audio>
+    
     <header>
         <div>
             <span class="fonte1">Deep Web</span>
             <span class="fonte2">>:)</span>
         </div>
     </header>
+    <audio id="audio" loop>
+        <source src="musica/audio.mp3" type="audio/mpeg">
+    </audio>
     <span id="burger" class="material-symbols-outlined" onclick="clickMenu()">menu</span>
         <menu id="itens">
             <ul>
@@ -29,17 +31,19 @@
                 <li><a href="outras.html" target="_self">comunidade</a>
             </ul>
         </menu>
-    <main>
-        <article>
-            <h1>Artigos de hoje:</h1>
-            <h2>-Como se livrar de um corpo?</h2>
-            <p>Eu acabei de matar meu vizinho porque ele pisou no rabo do meu cachorro "acidentalmente". Mas agora eu nao sei o que fazer com o corpo dele. Ele é muito gordo então...</p>
-            <h2>-Vendo criança seminova</h2>
-            <p>Ok, técnicamente é um adolescente, mas eu faço um preço bom. Ele é um moleque ruivo gordinho. Parece o Ed Sheran mas ele não sabe cantar, eu testei. Enfim, eu faço um preço bom</p>
-            <h2>-MÃES SOLTEIRAS PERTO DE VOCE</h2>
-            <p>Tens o que é preciso para esmagar a minha rata? Quer encontrar pessoas maduras pertinho de você? CLIQUE AQUI E SE RELACIONE!</p>
-        </article>
-    </main>
+    <div id="conteudo">
+        <main>
+            <article>
+                <h1>Artigos de hoje:</h1>
+                <h2>-Como se livrar de um corpo?</h2>
+                <p>Eu acabei de matar meu vizinho porque ele pisou no rabo do meu cachorro "acidentalmente". Mas agora eu nao sei o que fazer com o corpo dele. Ele é muito gordo então...</p>
+                <h2>-Vendo criança seminova</h2>
+                <p>Ok, técnicamente é um adolescente, mas eu faço um preço bom. Ele é um moleque ruivo gordinho. Parece o Ed Sheran mas ele não sabe cantar, eu testei. Enfim, eu faço um preço bom</p>
+                <h2>-MÃES SOLTEIRAS PERTO DE VOCE</h2>
+                <p>Tens o que é preciso para esmagar a minha rata? Quer encontrar pessoas maduras pertinho de você? CLIQUE AQUI E SE RELACIONE!</p>
+            </article>
+        </main>
+    </div>
     <footer>
         <div>
             <p>ESSE SITE USA COOKIES. Ao navegar neste Site você concorda com nossa <a href="paginas extras/cookies.html">Política de Cookies</a> e aceita os cookies que assamos para melhorar a sua experiência. <a href="#">ACEITAR</a></p>
@@ -52,7 +56,7 @@
             } else {
                 itens.style.display = 'block'
             }
-        }
+        }        
     </script>    
 </body>
 </html>

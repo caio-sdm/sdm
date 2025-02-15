@@ -77,13 +77,14 @@ menu {
 }
 menu > ul {
     background-color: var(--cor1-1);
-    background-position: center bottom;
     padding: 10px;
     box-shadow: inset 0px 2px 10px rgba(0, 0, 0, 0.5);
+    text-align: center;
 
 }
 menu > ul > li{
-    display: inline-block;
+    display: block;
+    
     background-color: transparent;
     padding: 10px;
 }
@@ -141,8 +142,7 @@ footer > div{
     color: white; 
     text-align: center;
     font-size: 0.8em;
-    padding: 5px;
-    position: absolute;
+    padding: 5px 0px;
 }
 footer a{
     color: white;
