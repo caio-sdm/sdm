@@ -19,6 +19,11 @@ tv/grandes telas: + 1920 */
         background-repeat: no-repeat;
         height: 80px;
     }
+    header > audio{
+        display: block;
+        margin: 12px 10%;
+    }
+
     span#burger{
         display: none;
     }

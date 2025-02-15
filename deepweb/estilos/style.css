@@ -63,6 +63,9 @@ header > div > span.fonte2{
     font-size: 2.3em;
     margin-left: 10px;
 }
+header > audio{
+    display: none;
+}
 span#burger{
     cursor: pointer;
     background-color: var(--cor1-1);
