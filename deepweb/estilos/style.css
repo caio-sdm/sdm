@@ -26,6 +26,13 @@
 *{
     margin: 0px;
     padding: 0px;
+    box-sizing: border-box;
+
+}
+html , body{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
 }
 body{
     background-image: linear-gradient(to top, #0f0000, black);
@@ -63,9 +70,6 @@ header > div > span.fonte2{
     font-size: 2.3em;
     margin-left: 10px;
 }
-header > audio{
-    display: none;
-}
 span#burger{
     cursor: pointer;
     background-color: var(--cor1-1);
@@ -101,6 +105,9 @@ menu > ul > li > a:hover{
     text-decoration: underline;
 }
 
+div#conteudo{
+    background-image: linear-gradient(to top, #0f0000, black);
+}
 main{
     background-color: black;
     width: 250px;
