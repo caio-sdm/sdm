@@ -135,17 +135,6 @@ main p{
     line-height: 1.5em;
     font-size: 1em;
 }
-main img{
-    width: 100%;
-    margin: auto;
-    display: block;
-}
-main img.pequeno{
-    max-width: 350px;
-    display: block;
-    margin: auto;
-}
-
 
 footer > div{
     background-color: var(--cor1);
@@ -157,7 +146,4 @@ footer > div{
 footer a{
     color: white;
     font-weight: bolder;
-}
-footer a:hover{
-    color: var(--cor1);
 }
