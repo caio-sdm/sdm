@@ -146,4 +146,8 @@ footer > div{
 footer a{
     color: white;
     font-weight: bolder;
+    transition-duration: 0.2s;
+}
+footer a:hover{
+    color: #ff1717;
 }
